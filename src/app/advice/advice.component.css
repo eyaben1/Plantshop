@@ -1,0 +1,73 @@
+/* src/app/advice/advice.component.css */
+
+/* Style général de la page */
+.advice-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f3bac3;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Titre principal */
+  .advice-container h2 {
+    font-size: 32px;
+    color: #049e37;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  /* Paragraphe */
+  .advice-container p {
+    font-size: 16px;
+    color: #110404;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Dernier paragraphe (sans marge sous lui) */
+  .advice-container p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Styles du lien de redirection vers le blog */
+  .advice-container .blog-link {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 25px;
+    background-color: #d25ca1;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .advice-container .blog-link:hover {
+    background-color: #c62d91;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style pour l'image du blog */
+  .advice-container .blog-image {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .advice-container .blog-image:hover {
+    transform: scale(1.05);
+  }
+  

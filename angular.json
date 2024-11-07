@@ -59,11 +59,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "browserTarget": "joes-robot-shop-enit:build:production"
-            },
             "development": {
-              "browserTarget": "joes-robot-shop-enit:build:development"
+              "browserTarget": "joes-robot-shop-enit:build:development",
+              "proxyConfig": "src/app/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -94,5 +92,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "572d6aa6-8d1a-4c65-b711-e0e68bc5acb5"
   }
 }

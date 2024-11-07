@@ -1,0 +1,21 @@
+<div class="product">
+    <div class="product-details">
+      <img [src]="getImageUrl(product)" [alt]="product.name" />
+      <div class="product-info">
+        <div class="name">{{ product.name }}</div>
+        <div class="description">{{ product.description }}</div>
+        <div class="category">Part Type: {{ product.category }}</div>
+      </div>
+    </div>
+    <div class="price">
+      <div *ngIf="product.discount === 0">
+        Price: ${{ product.price | number:'1.2-2' }}
+      </div>
+      <div *ngIf="product.discount > 0" class="discount">
+        Original Price: ${{ product.price | number:'1.2-2' }}<br>
+        Discounted Price: ${{ (product.price * (1 - product.discount)) | number:'1.2-2' }}
+      </div>
+      <button class="cta" (click)="buyButtonClicked()">Buy</button>
+    </div>
+  </div>
+  
